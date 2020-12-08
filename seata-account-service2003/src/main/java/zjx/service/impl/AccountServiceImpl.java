@@ -20,12 +20,12 @@ public class AccountServiceImpl implements AccountService {
 
     public CommonResult decreaseMoney(Long userId, BigDecimal money){
 
-        try {
-            //模拟异常
-            TimeUnit.SECONDS.sleep(20);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            //模拟异常
+////            TimeUnit.SECONDS.sleep(20);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         Account account = new Account();
         account.setUserId(userId);
         account = accountMapper.selectOne(account);
